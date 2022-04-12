@@ -1,24 +1,56 @@
-.header-logo__traveljapan {
-  font-family: arial;
-  color: pink;
+.homepage-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 70px 700px 300px 100px;
+  gap: 10px;
 }
 
-.nav-bar {
-  background-color: blanchedalmond;
-  overflow: hidden;
-  border: 1px solid black;
+.header {
+  background-color: lightcoral;
+  grid-column: 1/-1;
 }
-.nav-bar__subnav {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+.navigation {
+  background-color: lightcyan;
+  grid-column: 1/-1;
 }
-.nav-bar__subnavbtn {
-  float: left;
-  overflow: hidden;
+
+.content-section {
+  grid-column: 1/-1;
+  background-color: lightyellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 150px;
+}
+.content-section .content-1 {
+  background-color: plum;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.content-section .content-2 {
+  background-color: plum;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.content-section .content-3 {
+  background-color: plum;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gallery {
+  background-color: lightseagreen;
+  grid-column: 1/-1;
+}
+
+.footer {
+  background-color: pink;
+  grid-column: 1/-1;
 }
 
 /*# sourceMappingURL=homepage.css.map */
