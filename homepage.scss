@@ -1,0 +1,35 @@
+.header-logo {
+    &__traveljapan {
+        font-family: arial;
+        color: pink;
+    }
+}
+
+.nav-bar {
+    background-color: blanchedalmond;
+    overflow: hidden;
+    border: 1px solid black;
+
+    &__subnav {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    &__subnavbtn {
+        float: left;
+        overflow: hidden;
+    }
+
+    &__subnav-content {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+}
