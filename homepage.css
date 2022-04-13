@@ -1,13 +1,25 @@
+.header-container {
+  background-color: lightcoral;
+  grid-column: 1/-1;
+  display: grid;
+  justify-content: center;
+}
+.header-container .grid-item {
+  background: grey;
+  display: flex;
+}
+.header-container .grid-item .flex-item-heading {
+  background-color: pink;
+}
+.header-container .grid-item .flex-item-logo {
+  background-color: red;
+}
+
 .homepage-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30px 70px 700px 300px 100px;
   gap: 10px;
-}
-
-.header {
-  background-color: lightcoral;
-  grid-column: 1/-1;
 }
 
 .navigation {
@@ -21,12 +33,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 150px;
+  gap: 10px;
 }
 .content-section .content-1 {
   background-color: plum;
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 4;
+}
+.content-section .content-1 .flex-container {
+  display: flex;
+}
+.content-section .content-1 .flex-container .flex-item {
+  flex: 1;
+}
+.content-section .content-1 .flex-container .flex-item .flex.item1 {
+  background-color: blue;
+}
+.content-section .content-1 .flex-container .flex-item .flex-item2 {
+  background-color: red;
+}
+.content-section .content-1 .flex-container .flex-item .flex-item3 {
+  background-color: pink;
 }
 .content-section .content-2 {
   background-color: plum;
