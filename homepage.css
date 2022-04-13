@@ -1,84 +1,49 @@
-.header-container {
-  background-color: lightcoral;
-  grid-column: 1/-1;
-  display: grid;
-  justify-content: center;
-}
-.header-container .grid-item {
-  background: grey;
-  display: flex;
-}
-.header-container .grid-item .flex-item-heading {
-  background-color: pink;
-}
-.header-container .grid-item .flex-item-logo {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
 }
 
-.homepage-container {
+.header__text {
+  text-align: center;
+  color: blue;
+}
+.header__icon {
+  align-items: center;
+}
+
+.homepage-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30px 70px 700px 300px 100px;
+  grid-template-rows: 70px 350px 350px 100px;
+  grid-template-areas: "navigation navigation" "content1  content2" "content1  content3" "footer     footer";
   gap: 10px;
+  background-color: lightgrey;
 }
 
 .navigation {
-  background-color: lightcyan;
-  grid-column: 1/-1;
+  grid-area: navigation;
+  background-color: plum;
 }
 
-.content-section {
-  grid-column: 1/-1;
-  background-color: lightyellow;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 150px;
-  gap: 10px;
-}
-.content-section .content-1 {
-  background-color: plum;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
-.content-section .content-1 .flex-container {
-  display: flex;
-}
-.content-section .content-1 .flex-container .flex-item {
-  flex: 1;
-}
-.content-section .content-1 .flex-container .flex-item .flex.item1 {
-  background-color: blue;
-}
-.content-section .content-1 .flex-container .flex-item .flex-item2 {
-  background-color: red;
-}
-.content-section .content-1 .flex-container .flex-item .flex-item3 {
-  background-color: pink;
-}
-.content-section .content-2 {
-  background-color: plum;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.content-section .content-3 {
-  background-color: plum;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+.content1 {
+  grid-area: content1;
+  background-color: aliceblue;
 }
 
-.gallery {
-  background-color: lightseagreen;
-  grid-column: 1/-1;
+.content2 {
+  grid-area: content2;
+  background-color: teal;
+}
+
+.content3 {
+  grid-area: content3;
+  background-color: lightcoral;
 }
 
 .footer {
-  background-color: pink;
-  grid-column: 1/-1;
+  grid-area: footer;
+  background-color: mediumvioletred;
 }
 
 /*# sourceMappingURL=homepage.css.map */
