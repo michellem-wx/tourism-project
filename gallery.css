@@ -1,3 +1,13 @@
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: yellow;
+}
 
+.gallery {
+  margin: 2px;
+  border: 1px solid black;
+}
 
 /*# sourceMappingURL=gallery.css.map */

@@ -1,3 +1,9 @@
+$color-text-primary: #2e130dff;
+$color-text-secondary: #853529ff;
+$color-hover-primary: #d0bbc0ff;
+$color-hover-secondary: #cdaab1ff;
+$color-accent-primary: #5d9df4ff;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +13,7 @@
 .header {
     &__text {
         text-align: center;
-        color: blue;
+        color: $color-text-primary;
     }
 
     &__icon {
@@ -24,33 +30,53 @@
         "content1  content2"
         "content1  content3"
         "footer     footer";
-    gap: 10px;
-    background-color: lightgrey;
 }
 
 .navigation {
     grid-area: navigation;
-    background-color: plum;
+    background-color: $color-hover-primary;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__item {
+        flex-direction: row;
+
+        &__button {
+            font-size: 20px;
+            font-weight: bold;
+            color: $color-text-secondary;
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            overflow: hidden;
+        }
+
+        &__button:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
 }
 
 .content1 {
     grid-area: content1;
-    background-color: aliceblue;
+    background-color: rgb(248, 248, 248);
 }
 
 .content2 {
     grid-area: content2;
-    background-color: teal;
+    background-color: rgb(248, 248, 248);
 }
 
 .content3 {
     grid-area: content3;
-    background-color: lightcoral;
+    background-color: rgb(248, 248, 248);
 }
 
 .footer {
     grid-area: footer;
-    background-color: mediumvioletred;
+    background-color: $color-hover-secondary;
 }
 
 // .homepage-container {
