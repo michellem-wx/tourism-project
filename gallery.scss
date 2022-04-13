@@ -1,0 +1,13 @@
+// This gallery is for the 'Travel Inspo'page. Create 3 separate galleries for: Tokyo, Kyoto, Osaka.
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: yellow;
+}
+
+.gallery {
+    margin: 2px;
+    border: 1px solid black;
+}
