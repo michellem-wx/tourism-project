@@ -5,7 +5,8 @@
 }
 
 .header__text {
-  text-align: center;
+  display: flex;
+  justify-content: left;
   color: #2e130d;
 }
 .header__icon {

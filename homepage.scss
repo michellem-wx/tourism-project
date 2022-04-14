@@ -12,7 +12,8 @@ $color-accent-primary: #5d9df4ff;
 
 .header {
     &__text {
-        text-align: center;
+        display: flex;
+        justify-content: left;
         color: $color-text-primary;
     }
 
