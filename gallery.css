@@ -8,7 +8,7 @@
   padding: 2px;
   column-gap: 2px;
 }
-.gallery-container__item {
+.gallery-container__items {
   display: inline-block;
   margin-bottom: 3px;
   overflow: hidden;
